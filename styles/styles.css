@@ -427,6 +427,72 @@ header{
     width:20px;
     margin-right: 10px;
 }
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: auto;
+}
+footer .footer-links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: calc((100% - 330px));
+    margin-bottom: 50px;
+    padding: 0 10px;
+}
+.social-media{
+    width: 330px;
+    padding: 0 30px;
+    margin-bottom: 100px;
+}
+.social-media p{
+    font-family: YekanBakhHeavy;
+    font-size: 1.3rem;
+    color:#303030;
+}
+.social-media div{
+    display: flex;
+    margin-top: 20px;
+}
+.social-media a{
+    background-color: #eff4fe;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.footer-links p{
+    font-size: 1.3rem;
+    font-family: YekanBakhHeavy;
+    margin-top: 15px;
+    color:#303030;
+}
+.footer-links ul{
+    list-style: none;
+}
+.footer-links a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family:iranyekanwebmedium ;
+    color: #000;
+}
+.footer-links li{
+    padding: 8px 0;
+}
+.bell{
+    background-color: #2e82ff;
+    width: fit-content;
+    padding: 7px 7px 0;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left:20px;
+}
+.bell img{
+    width: 40px;
+}
 @keyframes fadeInDown {
     0%{
         opacity: 0;
@@ -491,6 +557,9 @@ header{
   .support{
     width:880px;
   }
+  footer{
+    width: 90px;
+  }
 }
 @media (max-width: 990px){
    header{
@@ -548,6 +617,16 @@ header{
    .support-number{
     font-size: 1.2rem;
    }
+   footer{
+    flex-direction: column;
+    width: calc(100% - 60px);
+   }
+   footer .footer-links{
+    width: 100%;
+   }
+   footer .social-media{
+    padding: 0 10px;
+   }
 }
 @media (max-width: 768px){
   .header-ul{
@@ -602,6 +681,16 @@ header{
     border-radius: 35px;
     margin-top: 20px;
   }
+  footer .footer-links{
+    grid-template-columns: repeat(2,1fr);
+  }
+  footer .footer-links div{
+    margin-top: 25px;
+  }
+  footer{
+    width:calc(100% - 120px) ;
+    margin: 0 60px;
+  }
 }
 
 @media (max-width: 575px){
@@ -649,5 +738,13 @@ header{
 .support-number,
 .support-request{
     font-size: 0.95rem;
+}
+footer{
+    width:calc(100% - 60px) ;
+    margin: 0 30px;
+}
+.footer-links p,
+.footer-links a{
+    font-size: 0.9rem;
 }
 }
